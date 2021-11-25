@@ -14,6 +14,7 @@ namespace Jeniza_DC_Project
         {
             //launch the browser
             webDriver = new ChromeDriver();
+            webDriver.Manage().Window.Maximize();
             webDriver.Navigate().GoToUrl("https://www.demo.bnz.co.nz/client/");
             Thread.Sleep(3000);
         }
